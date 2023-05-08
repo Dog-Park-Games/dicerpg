@@ -3,7 +3,7 @@ Simple rpg battle sim with dice
 
 Based on the scrimba.com course Nextlevel JavasScript from the Frontend Developer Path.
 
-<b>TIL:></b>
+<b>TIL:</b>
 <ul>
 <li>.map</li>
 <li>.fill</li>
