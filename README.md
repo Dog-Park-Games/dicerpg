@@ -5,8 +5,10 @@ Based on the scrimba.com course Nextlevel JavasScript from the Frontend Develope
 
 <b>TIL:</b>
 <ul>
-<li>.map</li>
-<li>.fill</li>
-<li>More complex for loops</li>
-<li>Object construction and deconstruction</li>
+<li>Returning functions inside of other functions</li>
+<li>Object construction and destructuring</li>
+<li>Array constructor</li>
+<li>.map()</li>
+<li>.join()</li>
+<li>.fill()</li>
 </ul>
