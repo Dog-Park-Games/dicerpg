@@ -13,6 +13,7 @@ html, body {
 main {
     display:flex;
     flex-direction: column;
+    width:100vw;
     align-items: center;
     margin-top: .5rem;
 } 
@@ -70,7 +71,7 @@ main {
 .avatar {
     width: 15vh;
     border: 2px solid #000721;
-    max-width:100%;
+    max-width:60%;
     opacity: 0.8;
     border-radius: 10px;
     background-color: rgba(0, 7, 33, 0.8);
@@ -89,7 +90,7 @@ main {
     text-align: left;
     margin: 1vh 5%;
     color:#ccc;
-    letter-spacing: 0.03em
+    letter-spacing: 0.03em;
 }
 
 @media(min-width:550px){
