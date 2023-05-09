@@ -10,6 +10,7 @@ Based on the scrimba.com course Nextlevel JavasScript from the Frontend Develope
 <li>Built-in JavaScript constructors</li>
 <li>Building and using custom constructors</li>
 <li>Object.assign()</li>
+<li>.this</li>
 <li>.map()</li>
 <li>.join()</li>
 <li>.fill()</li>
