@@ -15,16 +15,15 @@ const monster = {
 };
 
 function Character(data) {
-    this.id = data.id;
-    this.name = data.name;
-    this.avatar = data.avatar;
-    this.health = data.health;
-    this.diceCount = data.diceCount;
-    this.getCharacterHtml = function() {
-        const {id, name, avatar, health, diceCount} = this    
-        const diceHtml = getDiceHtml(diceCount)
 
-	    document.getElementById(id).innerHTML = `
+    Object.assign(this, data)
+
+    this.getCharacterHtml = function() {
+
+        const {id, name, avatar, health, diceCount} = this    
+        const diceHtml = this.getDiceHtml(diceCount)
+
+	    return `
             <div class="character-card">
                 <h4 class="name"> ${name} </h4>
                 <img class="avatar" src="${avatar}" />
@@ -35,11 +34,15 @@ function Character(data) {
             </div>
         `;
     }
+
+    this.getDiceHtml = function(diceCount) {
+        return getDiceRollArray(diceCount).map(function(num) {
+            return `<div class="dice">${num}</div>`
+            
+        }).join('')  
+        
+    }
 }
-
-
-
-
 
 function getDiceRollArray(diceCount) {
     return new Array(diceCount).fill(0).map(function(){
@@ -47,15 +50,15 @@ function getDiceRollArray(diceCount) {
     })
 }
 
-function getDiceHtml(diceCount) {
-    return getDiceRollArray(diceCount).map(function(num) {
-        return `<div class="dice">${num}</div>`
-        
-    }).join('')    
-}
+function render() {
+    const winnie = new Character(hero)
+    const squirrel = new Character(monster)
+    
+    document.getElementById(winnie.id).innerHTML = winnie.getCharacterHtml()
+    document.getElementById(squirrel.id).innerHTML =  squirrel.getCharacterHtml()
 
-const winnie = new Character(hero)
-const squirrel = new Character(monster)
-console.log(winnie)
-winnie.getCharacterHtml()
-squirrel.getCharacterHtml()
+}
+render()
+
+
+
