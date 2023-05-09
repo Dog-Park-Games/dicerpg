@@ -7,7 +7,8 @@ Based on the scrimba.com course Nextlevel JavasScript from the Frontend Develope
 <ul>
 <li>Returning functions inside of other functions</li>
 <li>Object construction and destructuring</li>
-<li>Array constructor</li>
+<li>Built-in JavaScript constructors</li>
+<li>Building and using custom constructors</li>
 <li>.map()</li>
 <li>.join()</li>
 <li>.fill()</li>
