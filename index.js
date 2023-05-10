@@ -12,8 +12,8 @@ function getNewMonster() {
 
 function attack() {
 	if (!isWaiting) {
-		winnie.getDiceHtml();
-		monster.getDiceHtml();
+		winnie.setDiceHtml();
+		monster.setDiceHtml();
 		winnie.takeDamage(monster.currentDiceScore);
 		monster.takeDamage(winnie.currentDiceScore);
 		render();
