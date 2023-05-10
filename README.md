@@ -16,4 +16,5 @@ Based on the scrimba.com course Nextlevel JavasScript from the Frontend Develope
 <li>.map()</li>
 <li>.join()</li>
 <li>.fill()</li>
+<li>.reduce()</li>
 </ul>
